@@ -18,12 +18,12 @@ echo "📧 Email: $EMAIL"
 echo ""
 
 # Create required directories
-mkdir -p nginx/certbot/conf nginx/certbot/www nginx/logs
+mkdir -p nginx-https/certbot/conf nginx-https/certbot/www nginx-https/logs
 
 # Update nginx config with domain name
 echo "📝 Updating Nginx configuration with domain: $DOMAIN"
-sed -i.bak "s/YOUR_DOMAIN/$DOMAIN/g" nginx/conf.d/nginx-https.conf
-rm -f nginx/conf.d/nginx-https.conf.bak
+sed -i.bak "s/YOUR_DOMAIN/$DOMAIN/g" nginx-https/conf.d/nginx.conf
+rm -f nginx-https/conf.d/nginx.conf.bak
 
 # Start nginx temporarily for certificate validation
 echo "🔧 Starting Nginx container for certificate validation..."

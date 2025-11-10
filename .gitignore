@@ -1,0 +1,21 @@
+# Nginx logs
+nginx/logs/
+
+# Certbot certificates and configuration
+nginx/certbot/
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
